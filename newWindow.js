@@ -5,6 +5,6 @@ const app = electron.app;
 const BrowserWindow = electron.BrowserWindow;
 
 function newWindow() {
-	window.open('https://web.whatsapp.com/');
+	window.open('./page2.html');
 	//require('./page2.html');
 }

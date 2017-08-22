@@ -1,0 +1,127 @@
+<!doctype html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <title>Hola Mundo!</title>
+      <style type="text/css" src="./css/stylesheet.css"></style>
+      <!-- <script> -->
+      <!-- require('./layout/head.html'); -->
+      <!-- </script> -->
+
+      <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+      <link type="text/css" rel="stylesheet" href="./css/materialize.min.css"  media="screen,projection"/>
+
+      <link rel="stylesheet" href="./css/stylesheet.css">
+   </head>
+   <body>
+      <header id="header" class="">
+         <nav id="navegador" class="nav-extended violeta">
+            <div class="nav-wrapper">
+               <a href="./index.html"><img class="icon" src="./images/icon.png" alt=""></a>
+               <ul id="secciones" class="right hide-on-med-and-down">
+               </ul>
+            </div>
+            <div class="nav-content">
+               <ul id="pestanias" class="tabs tabs-transparent">
+                  <li class="tab right" id="reloj_li">
+                     <p id="hora"></p>
+                     <p>:</p>
+                     <p id="minutos"></p>
+                     <p>:</p>
+                     <p id="segundos"></p>
+                  </li>
+               </ul>
+            </div>
+         </nav>
+      </header><!-- /header -->
+
+      <div id="view-index">
+         <div class='container'>
+            <h1>Welcome!! esta aplicacion hara mas faciles algunas cosas para vos</h1>
+         </div>
+      </div>
+
+      <div id="view-comandos" class='' style="display:none">
+         <span class="col s6 m6 l6">
+            <h4>Stats</h4>
+            <ul>
+               <li>/addstr </li>
+               <li>/addagi</li>
+               <li>/addvit</li>
+               <li>/addene</li>
+               <li>/addcmd</li>
+            </ul>
+         </span>
+
+         <span class="col s6 m6 l6">
+            <h4>Macros</h4>
+            <ul>
+                  <li>/x</li>
+                  <li>x puede ser cualquier numero entre 0-9 y se activan con Alt + x</li>
+            </ul>
+         </span>
+      </div>
+
+
+
+      <div id="view-horarios" class="" style="display:none">
+         <div class='container'>
+           <div class="contenedor">
+               <h2>Bottom Modal</h2>
+            	<div class="">
+      	      	<span class="col s6 m6 l6">
+             	  		<h4>Blood Castle</h4>
+                     <h6>Sonara una alarma cuando falten 10 min para el evento (recuerda que las puertas se habren 5 min antes)</h6>
+           	      	<ul>
+                        <li>00:00 hs</li>
+                        <li>04:00 hs</li>
+                        <li>08:00 hs</li>
+                        <li>12:00 hs</li>
+                        <li>16:00 hs</li>
+                        <li>20:00 hs</li>
+                        <li>24:00 hs</li>
+           	      	</ul>
+      	      	</span>
+      	      	<span class="col s6 m6 l6">
+           		  		<h4>Devil Square</h4>
+           		  		<ul>
+           		      	 <li>02:00 hs</li>
+                         <li>06:00 hs</li>
+                         <li>10:00 hs</li>
+                         <li>14:00 hs</li>
+                         <li>18:00 hs</li>
+                         <li>22:00 hs</li>
+           		  		</ul>
+      	      	</span>
+
+                  Double Goer
+                  2:30
+                  12:30
+                  16:30
+                  18:30
+                  20:30
+                  22:30
+                  24:30
+            	</div>
+            </div>
+         </div>
+      </div>
+
+
+
+      <footer>
+         <script> require('./index.js'); </script>
+         <script> require('./header.js'); </script>
+         <script> require('./render.js'); </script>
+
+         <script type="text/javascript"> window.$ = window.jQuery = require('./js/jquery-3.1.1.min.js') </script>
+         <!-- <script type="text/javascript" src="./js/jquery-3.1.1.min.js"></script> -->
+         <script type="text/javascript" src="./js/materialize.min.js"></script>
+
+         <!-- <script src=''> -->
+         <!-- require('./layout/footer.html'); -->
+         <!-- </script> -->
+      </footer>
+   </body>
+</html>

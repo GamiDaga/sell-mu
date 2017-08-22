@@ -2,9 +2,11 @@
   "name": "sell-mu",
   "version": "1.0.0",
   "description": "ventas items mu",
-  "main": "index.js",
+  "main": "main.js",
   "scripts": {
-    "start": "electron main.js"
+    "start": "electron .",
+    "pack": "build --dir",
+    "dist": "build"
   },
   "repository": {
     "type": "git",
@@ -12,15 +14,33 @@
   },
   "author": "GamiDaga",
   "license": "ISC",
+  "build": {
+    "appId": "Gami-sell-mu",
+    "asar": true,
+    "linux":{
+      "target": [
+         "AppImage",
+         "deb"
+      ]
+   },
+     "win":{
+         "target": "NSIS",
+         "icon": "build/icon.ico"
+     }
+
+  },
   "bugs": {
     "url": "https://github.com/GamiDaga/sell-mu/issues"
   },
   "homepage": "https://github.com/GamiDaga/sell-mu#readme",
   "devDependencies": {
-    "electron": "^1.6.11"
+    "electron": "^1.6.11",
+    "electron-builder": "^19.22.1"
   },
   "dependencies": {
     "express": "^4.15.3",
+    "materialize-css": "^0.99.0",
+    "mysql": "^2.13.0",
     "socket.io": "^2.0.3"
   }
 }
