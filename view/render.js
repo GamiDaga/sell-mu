@@ -52,7 +52,9 @@ function aviso(hora,margen) {
 
 var hora = new Date();
 var margen = 10; //traer de la pag
-var blood_alarma = true; //traer de la pag
+var blood_alarma = document.getElementById('blood_alarma').checked; //traer de la pag
+console.log(blood_alarma);
+
 var alarma = true; //traer de la pag
 var margen = 10; //traer de la pag
 
@@ -60,10 +62,12 @@ if (blood_alarma) {
    aviso(hora,margen);
 }
 setInterval(function(){
+   var blood_alarma = document.getElementById('blood_alarma').checked; //traer de la pag
    if (blood_alarma) {
       alarma = true; //traer de la pag
       hora = new Date();
       console.log('actualizo la hora');
+
       var audio = new Audio('./music/castle.mp3');
       if (hora.getSeconds() == 0) {
          if (aviso(hora,margen)) {
@@ -73,3 +77,23 @@ setInterval(function(){
 
    }
 },1000);
+
+
+
+
+// for(var row in menus){
+//      if(typeof menus[row] == 'object' && menus[row].getElementsByTagName('ul').length > 0){
+//          menus[row].getElementsByTagName('ul')[0].className = 'selected';
+//      }
+// }
+var blood = 0;
+document.getElementById('blood-header').addEventListener('click',function () {
+      var menus = document.getElementById('blood-body');
+      if (blood == 0) {
+         menus.style = 'display: inline-block';
+         blood++;
+      }else if (blood == 1) {
+         menus.style = 'display: none';
+         blood = 0;
+      }
+})

@@ -68,12 +68,42 @@
       <div id="view-horarios" class="" style="display:none">
          <div class='container'>
            <div class="contenedor">
-               <h2>Bottom Modal</h2>
-            	<div class="">
-      	      	<span class="col s6 m6 l6">
+      	      	<div class="col s6 m6 l6">
              	  		<h4>Blood Castle</h4>
+                     <div class="switch">
+                         <label>
+                           Off
+                           <input id="blood_alarma" type="checkbox">
+                           <span class="lever"></span>
+                           On
+                         </label>
+                     </div>
+
                      <h6>Sonara una alarma cuando falten 10 min para el evento (recuerda que las puertas se habren 5 min antes)</h6>
-           	      	<ul>
+                     <div class="collapsible">
+                        <div id="blood-header" class="collapsible-header desplegables" style="background-color:white;"><i class="material-icons">filter_drama</i>First</div>
+                        <div id="blood-body" class="collapsible-body desplegables" style="display:none;">
+                           <ul class="desplegables">
+                              <li>00:00 hs</li>
+                              <li>04:00 hs</li>
+                              <li>08:00 hs</li>
+                              <li>12:00 hs</li>
+                              <li>16:00 hs</li>
+                              <li>20:00 hs</li>
+                              <li>24:00 hs</li>
+                 	      	</ul>
+                        </div>
+                     </div>
+                  </div>
+                        <!-- <li>
+                           <div class="collapsible-header"><i class="material-icons">place</i>Second</div>
+                           <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+                        </li>
+                        <li>
+                           <div class="collapsible-header"><i class="material-icons">whatshot</i>Third</div>
+                           <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+                        </li> -->
+           	      	<!-- <ul class="collapsible">
                         <li>00:00 hs</li>
                         <li>04:00 hs</li>
                         <li>08:00 hs</li>
@@ -81,8 +111,7 @@
                         <li>16:00 hs</li>
                         <li>20:00 hs</li>
                         <li>24:00 hs</li>
-           	      	</ul>
-      	      	</span>
+           	      	</ul> -->
       	      	<span class="col s6 m6 l6">
            		  		<h4>Devil Square</h4>
            		  		<ul>
@@ -104,7 +133,6 @@
                   22:30
                   24:30
             	</div>
-            </div>
          </div>
       </div>
 
@@ -119,6 +147,9 @@
          <!-- <script type="text/javascript" src="./js/jquery-3.1.1.min.js"></script> -->
          <script type="text/javascript" src="./js/materialize.min.js"></script>
 
+         <script type="text/javascript">
+
+         </script>
          <!-- <script src=''> -->
          <!-- require('./layout/footer.html'); -->
          <!-- </script> -->

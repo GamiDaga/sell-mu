@@ -1,6 +1,7 @@
 *{
     padding: 0%;
-
+    overflow: hidden;
+    max-height: 600px;
 }
 
 html{
@@ -23,10 +24,11 @@ body{
     background-size: 100% 100%;
     /*background: url(http://i46.tinypic.com/25hkajb.jpg);
     background-position:top;*/
-    background-color: grey;
+    background-color: white;
 }
 .contenedor{
-    background-color: gray;
+    background-color: white;
+    padding: 3vw;
 }
 
 
@@ -215,4 +217,8 @@ body{
 
 .vista{
    display: none;
+}
+
+.desplegables{
+   background-color: white;
 }

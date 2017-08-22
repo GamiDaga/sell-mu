@@ -28,6 +28,7 @@ var a_comandos = document.createElement('a');
 			vista_actual.style = 'display: none'
 			vista_actual = document.getElementById('view-comandos');
 			vista_actual.style = 'display: block';
+			console.log(vista_actual.style);
 		});
 
 	comandos.appendChild(a_comandos);
