@@ -1,5 +1,6 @@
 var puntero_nav_secciones = document.getElementById('secciones');
-puntero_nav_secciones.innerHTML = '<li><a href="https://github.com/electron-userland/electron-builder/wiki/Options#LinuxBuildOptions-category" title="">Mu Cronicas</a></li><li><a href="http://www.google.com/">google</a></li>';
+
+puntero_nav_secciones.innerHTML = '<li><a href="https://github.com/electron-userland/electron-builder/wiki/Options#LinuxBuildOptions-category" title="">Mu Cronicas</a></li><li><a href="http://www.google.com/">google</a></li><li><a class="modal-trigger" id="settings-open" href="#modal1"><i class="material-icons">settings</i></a></li>';
 
 
 
@@ -28,7 +29,7 @@ var a_comandos = document.createElement('a');
 			vista_actual.style = 'display: none'
 			vista_actual = document.getElementById('view-comandos');
 			vista_actual.style = 'display: block';
-			console.log(vista_actual.style);
+			// console.log(vista_actual.style);
 		});
 
 	comandos.appendChild(a_comandos);
